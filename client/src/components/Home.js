@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar.js';
 
-const Navbar = props => {
+const Home = props => {
     return (
         <>
             <Navbar/>
