@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from './Header.js';
+import Navbar from './Navbar.js';
 
-const Home = props => {
+const Navbar = props => {
     return (
         <>
-            <Header/>
+            <Navbar/>
             <h1>Home</h1>
             <h1>{props.data}</h1>
         </>
