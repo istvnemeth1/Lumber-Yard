@@ -1,11 +1,16 @@
 import React from 'react';
+import Village from './Menu/Village.js';
 import Navbar from './Navbar.js';
 
 const Home = props => {
     return (
         <>
             <Navbar/>
-            <h1>Home</h1>
+            <div class="main">
+                {/* Here comes the chosen menu */}
+                {/* Village Proba */}
+                <Village />
+            </div>
             <h1>{props.data}</h1>
         </>
     );
