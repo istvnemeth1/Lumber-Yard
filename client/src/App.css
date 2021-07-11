@@ -47,24 +47,21 @@ navbar .bi {
   line-height: 0;
 }
 
-.gem:after {
+.gem:after, .coin:after, .cash:after {
   position: relative;
   top: -.15rem;
-  left: -1rem;
+  left: -.5rem;
+}
+
+.gem:after {
   content: "50";
 }
 
 .coin:after {
-  position: relative;
-  top: -.15rem;
-  left: -1rem;
   content: "50";
 }
 
 .cash:after {
-  position: relative;
-  top: -.15rem;
-  left: -1rem;
   content: "50";
 }
 
