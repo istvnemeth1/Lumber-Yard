@@ -1,6 +1,12 @@
 import React from 'react'
 
+
+
 const Navbar = () => {
+    // const menuButton = document.querySelector('.todo');
+    // menuButton.addEventListener('click', () => {
+    //     if (this.)
+    // })
     return (
         <navbar class="sticky center">
             <div class="todo">
