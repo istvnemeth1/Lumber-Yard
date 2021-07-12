@@ -9,9 +9,18 @@ body {
 navbar {
   border: 1px solid rgb(214, 214, 214);
   background-color: white;
+  display: flex;
   height: 2rem;
   width: 100%;
   z-index: 1;
+}
+
+navbar .bi {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 1rem;
+  font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .sticky {
@@ -22,22 +31,13 @@ navbar {
 .main {
   position:relative;
   top: 2.1rem;
-  width: 70rem;
+  max-width: 70rem;
   margin: 0 auto;
 }
 
 .center {
-  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-navbar .bi {
-  height: 1.5rem;
-  width: 1.5rem;
-  margin: 0 1rem;
-  font-size: 1.4rem;
-  cursor: pointer;
 }
 
 .right {
@@ -88,4 +88,38 @@ navbar .bi {
   right: 0;
   cursor: pointer;
   border-left: 1px solid rgb(214, 214, 214);
+}
+
+@media only screen and (max-device-width: 800px) {
+
+  navbar {
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%; 
+  }
+
+  navbar .bi {
+    height: 5rem;
+    width: 5rem;
+    margin: 1rem;
+    font-size: 5rem;
+    cursor: pointer;
+  }
+
+  .right {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .gem .bi, .coin .bi, .cash .bi {
+    height: 1.5rem;
+    width: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .main {
+    width: 100%;
+  }
+
 }
