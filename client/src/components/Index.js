@@ -11,7 +11,7 @@ const Index = props => {
                 {/* Village Proba */}
                 <Village />
             </div>
-            <h1>{props.data}</h1>
+            {/* <h1>{props.data}</h1> */}
         </>
     );
 }

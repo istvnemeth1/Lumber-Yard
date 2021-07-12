@@ -6,7 +6,7 @@ const Village = () => {
         <div id="shop" class="card">
             <i class="bi bi-shop"></i>
             <div class="description">
-                <h1>B&Q</h1>
+                <h1>B&Ku</h1>
                 <p>You've got more things for higher price eg:</p>
                 <p>Tools, Materials, Supply</p>
             </div>
