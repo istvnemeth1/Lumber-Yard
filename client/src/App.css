@@ -41,15 +41,16 @@ navbar .bi {
 }
 
 .right {
+  background-color: white;
+  border-bottom: 1px solid wheat;
   display:flex;
   position: absolute;
   right: 1rem;
-  line-height: 0;
 }
 
 .gem:after, .coin:after, .cash:after {
   position: relative;
-  top: -.15rem;
+  top: -.4rem;
   left: -.5rem;
 }
 
@@ -96,7 +97,10 @@ navbar .bi {
     flex-flow: column;
     height: 100%;
     width: 3rem;
-    justify-content: space-around;
+  }
+
+  .center {
+    justify-content: space-evenly;
   }
 
   navbar .bi {
@@ -107,7 +111,15 @@ navbar .bi {
   .right {
     position: fixed;
     top: 0;
+
   }
+
+  .right .bi {
+    margin: 1rem;
+    background-color: white;
+  }
+
+
 
   
 
@@ -117,7 +129,6 @@ navbar .bi {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    top: 0;
     width: 100%;
   }
 
