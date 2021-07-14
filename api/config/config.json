@@ -1,0 +1,14 @@
+{
+  "development": {
+    "dialect": "sqlite",
+    "storage": "lumber.db"
+  },
+  "test": {
+    "dialect": "sqlite",
+    "storage": "lumber.db"
+  },
+  "production": {
+    "dialect": "sqlite",
+    "storage": "lumber.db"
+  }
+}

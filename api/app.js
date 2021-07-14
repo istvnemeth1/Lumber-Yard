@@ -1,8 +1,10 @@
 var createError = require('http-errors');
 var express = require('express');
+const cors = require('cors');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const sequelize = require('./models').sequelize;
 
 var house = require('./routes/house');
 // var usersRouter = require('./routes/users');
@@ -22,6 +24,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, 'public')));
 
+//enable use CORS
+app.use(cors());
+
+
 app.use('/api', house);
 // app.use('/users', usersRouter);
 
@@ -29,6 +35,21 @@ app.use('/api', house);
 app.use(function(req, res, next) {
   next(createError(404));
 });
+
+
+// test DB connection
+(async () => {
+  try {
+      await sequelize.authenticate();
+      console.log('Connection to the database successful!');
+
+  } catch (error) {
+      console.error('Error connecting to the database: ', error);
+
+  }
+
+})();
+
 
 // error handler
 app.use(function(err, req, res, next) {

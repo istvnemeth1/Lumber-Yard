@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './App.css';
+
 // import Index from './components/Index.js';
 import Home from './components/Menu/Home.js';
 import Village from './components/Menu/Village.js';
