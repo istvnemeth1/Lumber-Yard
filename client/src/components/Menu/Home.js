@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'
 
 const Home = () => {
     return (
@@ -10,9 +11,11 @@ const Home = () => {
                 <p>Here you can sleep</p>
                 <p>Storage space: 4</p>
             </div>
-            <div class="button-right">
-                <i class="bi bi-caret-right"></i>
-            </div>
+                <div class="button-right">
+                    <NavLink to="/shed" style={{ textDecoration: 'none', color: 'black' }}>
+                        <i class="bi bi-caret-right"></i>
+                    </NavLink>
+                </div>
         </div>
         <div id="house" class="card">
             <i class="bi bi-border"></i>

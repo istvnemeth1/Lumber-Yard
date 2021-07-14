@@ -5,27 +5,27 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
     return (
         <navbar class="sticky center">
-            <NavLink to='/todo'>
+            <NavLink to='/todo' style={{ textDecoration: 'none', color: 'black' }}>
             <div class="todo">
                 <i class="bi bi-clipboard-check"></i>
             </div>
             </NavLink>
-            <NavLink to='/home'>
+            <NavLink to='/home' style={{ textDecoration: 'none', color: 'black' }}>
                 <div class="home">
                     <i class="bi bi-house-door"></i>
                 </div>
             </NavLink>
-            <NavLink to='/menu'>
+            <NavLink to='/menu' style={{ textDecoration: 'none', color: 'black' }}>
                 <div class="menu">
                     <i class="bi bi-signpost-split"></i>
                 </div>
             </NavLink>
-            <NavLink to='/notification'>
+            <NavLink to='/notification' style={{ textDecoration: 'none', color: 'black' }}>
                 <div class="notification">
                     <i class="bi bi-bell"></i>
                 </div>
             </NavLink>
-            <NavLink to='/settings'>
+            <NavLink to='/settings' style={{ textDecoration: 'none', color: 'black' }}>
                 <div class="setings">
                     <i class="bi bi-person-badge"></i>
                 </div>
