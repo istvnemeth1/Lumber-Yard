@@ -7,28 +7,28 @@ const Home = () => {
         <>
         <Navbar />
         <div className="main">
-            <div id="house" class="card">
-                <i class="bi bi-house-door"></i>
-                <div class="description">
+            <div id="house" className="card">
+                <i className="bi bi-house-door"></i>
+                <div className="description">
                     <h1>Shed</h1>
                     <p>Here you can sleep</p>
                     <p>Storage space: 4</p>
                 </div>
-                    <div class="button-right">
+                    <div className="button-right">
                         <NavLink to="/shed" style={{ textDecoration: 'none', color: 'black' }}>
-                            <i class="bi bi-caret-right"></i>
+                            <i className="bi bi-caret-right"></i>
                         </NavLink>
                     </div>
             </div>
-            <div id="house" class="card">
-                <i class="bi bi-border"></i>
-                <div class="description">
+            <div id="house" className="card">
+                <i className="bi bi-border"></i>
+                <div className="description">
                     <h1>Garden</h1>
                     <p>You can plant here</p>
                     <p>Planting space: 5</p>
                 </div>
-                <div class="button-right">
-                    <i class="bi bi-caret-right"></i>
+                <div className="button-right">
+                    <i className="bi bi-caret-right"></i>
                 </div>
             </div>
         </div>
