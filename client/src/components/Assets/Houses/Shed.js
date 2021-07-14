@@ -1,8 +1,14 @@
 import React from 'react';
+import Navbar from '../../Navbar.js';
 
 const Shed = () => {
-    return (
-        <h1>This is the shed</h1>
+    return(
+        <>
+        <Navbar />
+        <div className="main">
+            <p>Here Comes the content of Shed.</p>
+        </div>
+        </>
     )
 }
 
