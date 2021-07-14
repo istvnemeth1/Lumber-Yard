@@ -6,7 +6,7 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-navbar {
+.navbar {
   border: 1px solid rgb(214, 214, 214);
   background-color: white;
   display: flex;
@@ -15,7 +15,7 @@ navbar {
   z-index: 1;
 }
 
-navbar .bi {
+.navbar .bi {
   height: 1.5rem;
   width: 1.5rem;
   margin: 0 1rem;
@@ -93,7 +93,7 @@ navbar .bi {
 
 @media only screen and (max-device-width: 800px) {
 
-  navbar {
+  .navbar {
     flex-flow: column;
     height: 100%;
     width: 3rem;
@@ -103,7 +103,7 @@ navbar .bi {
     justify-content: space-evenly;
   }
 
-  navbar .bi {
+  .navbar .bi {
     margin: 0;
     font-size: 2rem;
   }

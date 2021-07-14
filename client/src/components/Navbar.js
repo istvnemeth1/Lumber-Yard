@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <Navbar className="sticky center">
+        <div className="sticky center navbar">
             <NavLink to='/todo' style={{ textDecoration: 'none', color: 'black' }}>
             <div className="todo">
                 <i className="bi bi-clipboard-check"></i>
@@ -41,7 +41,7 @@ const Navbar = () => {
                     <i className="bi bi-piggy-bank"></i>
                 </div>
             </div>
-        </Navbar>
+        </div>
     );
 };
 

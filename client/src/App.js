@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+
 import './App.css';
 // import Index from './components/Index.js';
 import Home from './components/Menu/Home.js';
@@ -9,7 +9,7 @@ import Todo from './components/Menu/Todo.js';
 import Settings from './components/Menu/Settings.js';
 import Shed from './components/Assets/Houses/Shed.js';
 import Error from './components/404.js';
-
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 class App extends Component {
   // time test 3
   render(){
