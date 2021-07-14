@@ -45,12 +45,18 @@ class Shed extends Component {
         const mapedSheds = sheds.map((shed, index) => {
             
             return (
-                <div key={index} class="card" >
-  <img src="https://lh3.googleusercontent.com/proxy/M_eYRtK5qBj3nXf62Quo-TcH3kPiihZ331rW1JcAUPLW4nYdDWm1oNVHAFxAwfwpXTUaYZes8RIGufmOqAkyw1h406rCwtjrUiSoKvu8gxwMeXfOwCEgEUi_bPd0zrPhmv0Uz2BlWP2gjXhT9o3dd8y9XsxWwbiqAHs" class="card-img-top house-img" alt="..."/>
-  <div class="card-body">
-    <h5 class="card-title">{shed.houseName}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    
+                <div key={index} class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://static.thenounproject.com/png/1170643-200.png" class="img-fluid rounded-start" alt="..." />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{shed.houseName}</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
   </div>
 </div>
                 
