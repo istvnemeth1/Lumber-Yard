@@ -19,7 +19,10 @@ module.exports = {
       updatedAt: new Date()
     },
     {
-      houseName: 'Shed'
+      houseName: 'Shed',
+      
+      createdAt: new Date(),
+      updatedAt: new Date()
     }], {});
   },  down: (queryInterface, Sequelize) => {
     return queryInterface.bulkDelete('Houses', null, {});
