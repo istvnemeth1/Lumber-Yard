@@ -11,7 +11,7 @@ import Shed from './components/Assets/Houses/Shed.js';
 import Error from './components/404.js';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 class App extends Component {
-  // time test 3
+  
   render(){
     return (
       <>

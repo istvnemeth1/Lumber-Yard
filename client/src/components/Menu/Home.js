@@ -1,23 +1,18 @@
 import React from 'react';
+import { __RouterContext } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import Navbar from '../Navbar.js';
 
 const Home = () => {
 
-    function windowWide () {
-        if (window.innerWidth <= 800) {
-            return <NavLink to="/shed" style={{ textDecoration: "none", color: "black" }}><i className="bi bi-house-door"></i></NavLink>;
-        } else {
-            return (<i className="bi bi-house-door"></i>);
-        }
-    }
+    let windowWide = window.innerWidth <= 800 ? <NavLink to="/shed" style={{ textDecoration: "none", color: "black" }}><i className="bi bi-house-door"></i></NavLink> : <i className="bi bi-house-door"></i>;
 
     return (
         <>
         <Navbar />
         <div className="main">
             <div id="house" className="card">
-                {window.addEventListener('resize', windowWide)}
+                {windowWide}
                 <div className="description">
                     <h1>Shed</h1>
                     <p>Here you can sleep</p>
