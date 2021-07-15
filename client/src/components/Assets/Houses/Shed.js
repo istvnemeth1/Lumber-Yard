@@ -6,8 +6,7 @@ class Shed extends Component {
 
     state = {
         sheds: [],
-        housename: '',
-        cost: ''
+        housename: ''
     }
 
 
@@ -21,8 +20,7 @@ class Shed extends Component {
             //pityu this is when you would like to set new object from api and pass  it to shed array
             this.setState({ 
               sheds: data.data,
-              housename: data.data.housename,
-              cost: data.data.cost
+              housename: data.data.housename
             })
 
           //  console.log(this.state.sheds);
