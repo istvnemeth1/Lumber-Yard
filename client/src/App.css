@@ -46,8 +46,6 @@ body {
 }
 
 .right {
-  background-color: white;
-  border-bottom: 1px solid wheat;
   display:flex;
   position: absolute;
   right: 1rem;
@@ -55,8 +53,8 @@ body {
 
 .gem:after, .coin:after, .cash:after {
   position: relative;
-  top: -.4rem;
-  left: -.5rem;
+  top: -.15rem;
+  left: -.4rem;
 }
 
 .gem:after {
@@ -114,9 +112,18 @@ body {
   }
 
   .right {
+    background-color: white;
+    border-bottom: 1px solid wheat;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
     position: fixed;
     top: 0;
 
+  }
+
+  .gem:after, .coin:after, .cash:after {
+    top: -.4rem;
+    left: -.5rem;
   }
 
   .right .bi {
