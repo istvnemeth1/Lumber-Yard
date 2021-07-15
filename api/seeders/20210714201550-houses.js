@@ -2,7 +2,7 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert('Houses', [{
       houseName: 'Stefan House',
-      
+      // tet
       createdAt: new Date(),
       updatedAt: new Date()
     },
