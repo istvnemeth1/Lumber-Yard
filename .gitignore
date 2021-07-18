@@ -5,6 +5,7 @@
 /api/node_modules
 /client/.pnp
 /client/.pnp.js
+/api/lumber.db
 
 # testing
 /coverage

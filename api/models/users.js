@@ -19,10 +19,50 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Users.init({
-    userName: DataTypes.STRING,
-    email: DataTypes.STRING,
+    userName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: {
+        msg: 'The Username you entered already exists'
+      },
+      validate: {
+        notNull: {
+          msg: 'First Name is required'
+        },
+        notEmpty: {
+          msg: 'Please provide a First name'
+        },
+      }
+    },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: {
+        msg: 'The email address you entered already exists'
+      },
+      validate: {
+        isEmail: {
+          msg: 'Please provide valid email address'
+        }, 
+        notNull: {
+          msg: 'Email is required'
+        },
+        notEmpty: {
+          msg: 'Please provide your email address'
+        },
+      }
+    },
     password: {
       type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+          notNull: {
+            msg: 'Password is required'
+          }
+      },
+      /***
+       * hashed password before persisting the user to the database
+       */
       set(val) {
         const hashedPassword = bcrypt.hashSync(val, 10);
         this.setDataValue("password", hashedPassword);
